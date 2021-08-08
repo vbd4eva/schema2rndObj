@@ -2,10 +2,10 @@ fetch("./JSON-shema.json")
   .then((response) => {
     return response.json();
   })
-  .then((data) => console.log(randomObject(data)));
+  .then((data) => console.log(getRandomObject(data)));
 
 //
-function randomObject(jsonSchema) {
+function getRandomObject(jsonSchema) {
   if (jsonSchema?.type !== "object") {
     alert("Передайте JSONschema.type == 'object'");
     return;

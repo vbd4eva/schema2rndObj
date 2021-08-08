@@ -1,4 +1,4 @@
-function randomObject(jsonSchema) {
+function getRandomObject(jsonSchema) {
   if (jsonSchema?.type !== "object") {
     alert("Передайте JSONschema.type == 'object'");
     return;
